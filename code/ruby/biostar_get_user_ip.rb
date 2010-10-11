@@ -4,7 +4,7 @@ require "rubygems"
 require "mechanize"
 require "logger"
 
-log    = Logger.new('ip.txt')
+log    = Logger.new('../../data/ip.txt')
 url    = "http://biostar.stackexchange.com/users"
 auth   = ARGV[0] or abort("Usage = biostar.rb auth-cookie-string")
 agent  = Mechanize.new
